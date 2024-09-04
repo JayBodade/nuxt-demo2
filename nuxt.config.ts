@@ -9,7 +9,14 @@ export default defineNuxtConfig({
   },
   css: [
     'vuetify/styles',
-    '@mdi/font/css/materialdesignicons.css', // Import MDI CSS here
-  ],
+    '@mdi/font/css/materialdesignicons.css',
+  ], 
+  
+  routeRules:{
+    "/product/*":{prerender:true},
+  }
+ 
+   
 
 })
+
